@@ -756,7 +756,7 @@ footer .copyright{
     margin: 30px auto 0 auto;
 }
 
-#about-app .video video{
+#about-app .video video {
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -880,6 +880,11 @@ footer .copyright{
 
 /* Cart page */
 
+#cart {
+    overflow-x: auto;
+}
+
+
 #cart table{
     width: 100%;
     border-collapse: collapse;
@@ -925,7 +930,7 @@ footer .copyright{
 
 }
 
-#cart table thead th{
+#cart table thead td{
     font-weight: 700;
     text-transform: uppercase;
     font-size: 13px;
@@ -1009,11 +1014,11 @@ footer .copyright{
     
 
     #navbar {
-        position: relative;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+        position: fixed;
         top: 0;
         right: -300px;
         height: 100vh;
@@ -1100,9 +1105,25 @@ footer .copyright{
     #newsletter .form{
         width: 70%;
     }
+
+/* contact page */
+
+    #form-details{
+        padding: 40px;
+    }
+
+    #form-details form{
+        width: 50%;
+    }
 }
 
+
+
 @media (max-width: 477px) {
+    .section-p1{
+        padding: 20px;
+    }
+
     #header{
         padding: 10px 30px;
     }
@@ -1205,6 +1226,47 @@ footer .copyright{
 
     #blog .blog-details{
         width: 100%;
+    }
+
+    
+/* contact page */
+
+    #contact-details {
+        flex-direction: column;
+    }
+
+    #contact-details .details {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact-details .map {
+        width: 100%;
+    }
+
+    #form-details {
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+    #form-details form{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* cart page */
+
+    #cart-add{
+        flex-direction: column;
+    }
+
+    #coupon{
+        width: 100%;
+    }
+
+    #subtotal{
+        width: 100%;
+        padding: 20px;
     }
 }
 
